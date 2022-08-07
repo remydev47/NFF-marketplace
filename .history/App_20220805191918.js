@@ -1,7 +1,7 @@
 import { NavigationContainer, DefaultTheme } from '@react-navigation/native'
 import { createStackNavigator } from '@react-navigation/stack';
-import { useFonts } from 'expo-font';
-//import * as Font from 'expo-font';
+//import { useFonts } from 'expo-font';
+import * as Font from 'expo-font';
 import Home from './screens/Home';
 import Details from './screens/Details';
 
@@ -16,7 +16,7 @@ const theme =  {
 }
 
 export default function App() {
-  const [loaded] = useFonts({
+  const [loaded] = Font({
     InterBold:require("./assets/fonts/Inter-Bold.ttf"),
     InterSemiBold:require("./assets/fonts/Inter-SemiBold.ttf"),
     InterRegular:require("./assets/fonts/Inter-Regular.ttf"),
